@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, Button } from "@nextui-org/react";
-import { Link } from "@nextui-org/react";
-import { ChevronDownIcon } from "@/components/icons";
+import { Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, Button } from "@nextui-org/react"
+import { Link } from "@nextui-org/react"
+import { ChevronDownIcon } from "@/components/icons"
 
 export default function ServicesDrop() {
   return (
@@ -20,7 +20,7 @@ export default function ServicesDrop() {
         </Link>
       </DropdownTrigger>
 
-      <DropdownMenu variant="faded" aria-label="Static Actions" onAction={(key) => alert(key)}>
+      <DropdownMenu variant="faded" aria-label="Services Dropdown" onAction={(key) => alert(key)}>
         <DropdownItem key="new">New file</DropdownItem>
         <DropdownItem key="copy">Copy link</DropdownItem>
         <DropdownItem key="edit">Edit file</DropdownItem>
@@ -29,5 +29,5 @@ export default function ServicesDrop() {
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
-  );
+  )
 }
