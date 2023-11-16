@@ -6,13 +6,13 @@ import { ChevronDownIcon } from "@/components/icons"
 
 export default function BlogDrop() {
   return (
-    <Dropdown backdrop="blur">
+    <Dropdown>
       <DropdownTrigger>
         <Link
           href="#"
           isBlock
           showAnchorIcon
-          anchorIcon={<ChevronDownIcon className="text-sm" />}
+          anchorIcon={<ChevronDownIcon />}
           color="foreground"
           className="hidden md:flex gap-1 justify-start ml-2"
         >

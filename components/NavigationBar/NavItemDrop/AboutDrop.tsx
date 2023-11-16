@@ -9,10 +9,10 @@ export default function AboutDrop() {
     <Dropdown>
       <DropdownTrigger>
         <Link
-          href="./about"
+          href="#"
           isBlock
           showAnchorIcon
-          anchorIcon={<ChevronDownIcon className="text-sm" />}
+          anchorIcon={<ChevronDownIcon />}
           color="foreground"
           className="hidden md:flex gap-1 justify-start ml-2"
         >
@@ -20,7 +20,7 @@ export default function AboutDrop() {
         </Link>
       </DropdownTrigger>
 
-      <DropdownMenu variant="faded" aria-label="Static Actions" onAction={(key) => alert(key)}>
+      <DropdownMenu variant="faded" aria-label="About Dropdown" onAction={(key) => alert(key)}>
         <DropdownItem key="new">New file</DropdownItem>
         <DropdownItem key="copy">Copy link</DropdownItem>
         <DropdownItem key="edit">Edit file</DropdownItem>
